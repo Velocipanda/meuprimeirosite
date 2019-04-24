@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="stilo.css">
+
+	<title>Matheus Rodrigues</title>
+
+</head>
+
+<body>
+	
+	<header>
+
+		<div class="container">
+			<div id="nome">
+				<h2>Matheus Rodrigues Rodrigues</h2>
+			</div>
+		</div>
+
+		<audio id="audio">
+		  	<source src="musicadig.ogg" type="audio/ogg">
+			<source src="musicadig.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+
+		<div id="musica">
+			♫ Brave Heart 8-Bits ♫
+			<br>
+			<big>
+		    <button type="button" onclick="play()">►</button>
+		    <button type="button" onclick="pause()">❚❚</button>
+		    <button type="button" onclick="stop()">∎</button>
+		    <button type="button" onclick="aumentar_volume()"> + </button>
+		    <button type="button" onclick="diminuir_volume()"> - </button></b>
+		    <button type="button" onclick="mute()"> Mute</button>
+			</big>
+		</div>
+
+		<script>
+			audio = document.getElementById('audio');
+
+			function play(){
+	        	audio.play();
+	    	}
+	 
+	   		function pause(){
+	        	audio.pause();
+	    	}
+	 
+	    	function stop(){
+	        	audio.pause();
+	        	audio.currentTime = 0;
+	    	}
+	 
+	    	function aumentar_volume(){
+	        	if( audio.volume < 1)  audio.volume += 0.1;
+	    	}
+	 
+	    	function diminuir_volume(){
+	        	if( audio.volume > 0)  audio.volume -= 0.1;
+	    	}
+	         
+	    	function mute(){
+	        	if( audio.muted ){
+	            audio.muted = false;
+	        		}else{
+	            	audio.muted = true;
+	        }
+	    }
+		</script>
+
+	</header>
+
+	<div id="meio">
+		<div id="foto">
+			<img src="digidscapa.png" height="350px" style="border: #000066 5px double">
+		</div>
+
+		<div id="bio">
+			<p>Atualmente estou jogando um jogo que joguei no começo da minha adolescência. Digimon World DS, como já diz o nome é um da série de jogos e famosa pela animação produzida no começo do século, Digimon. E assim como o tão famoso Pokémon, nele você treina seus monstrinhos para evoluí-los e deixá-los mais forte. Podendo ter com você um total de 6 Digimon, andando por aí. E abaixo seguem os meus monstrinhos mais fortes usados para derrotar os "Boss" do game:</p>
+			<br>
+			<table>
+				<tr>
+					<th>Nome</th>
+					<th>Tipo</th>
+					<th>Nível</th>
+				</tr>
+
+				<tr>
+					<td><img src="https://vignette.wikia.nocookie.net/digimon-adventure5140/images/0/06/Rosemon_tri.png/revision/latest?cb=20180411032816">Rosemon</img></td>
+					<td>Inseto/Planta</td>
+					<td>52</td>
+				</tr>
+				<tr>
+					<td><img src="jijimon.png">Jijimon</img></td>
+					<td>Luz</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td><img src="gseadra.png">GSeadramon</img></td>
+					<td>Peixe</td>
+					<td>47</td>
+				</tr>
+				<tr>
+					<td><img src="chebe.png">CherubimonE</img></td>
+					<td>Trevas</td>
+					<td>43</td>
+				</tr>
+				<tr>
+					<td><img src="chebg.png">CherubimonG</img></td>
+					<td>Luz</td>
+					<td>50</td>
+				</tr>
+	 			<tr>
+					<td><img src="Zudomon.png">Zudomon</img></td>
+					<td>Peixe</td>
+					<td>44</td>
+				</tr>
+			</table>
+			<p id="dica">Experimente passar o mouse por cima dos nomes!</p>
+		</div>
+	</div>
+
+	<footer>
+		
+		<div id="links">
+			<a href="https://drive.google.com/drive/folders/1cWgE09QkrcvmZS1hbpUAzhLcz2PLFX75" target="_blank">
+			<img class="thumbnail" src="driver.png" height="30px"></a>
+			&nbsp;
+			<a href="https://www.facebook.com/profile.php?id=100004389423585" target="_blank"><img class="thumbnail" src="fb.png" height="30px"></a>
+			&nbsp;
+			<a href="https://www.youtube.com/watch?v=a9XzUWAzhlU" target="_blank"><img class="thumbnail" src="yt.png" height="30px"></a>
+			&nbsp;
+			<a href="https://digimon.fandom.com/wiki/Digimon_Wiki" target="_blank"><img class="thumbnail" src="agumon.gif" height="30px"></a>
+		</div>
+
+		<div id="final">
+			<div id="cita">
+				<q><i>É um ato de fé.</i></q> Peter Parker(Aranhaverso)
+			</div>
+			<p>Feito por Matheus Rodrigues Rodrigues</p>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
